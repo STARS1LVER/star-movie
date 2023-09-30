@@ -1,0 +1,16 @@
+h1{
+  font-family: 'Inter', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+a{
+  font-family: 'Inter', sans-serif;
+  color: rgb(255, 255, 255);
+
+}
+.header-nav{
+  background-color: #ffb300;
+  cursor: pointer;
+}

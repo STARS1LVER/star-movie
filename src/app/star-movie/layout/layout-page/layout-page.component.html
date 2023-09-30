@@ -1,0 +1,32 @@
+<header>
+  <nav class="navbar navbar-expand-lg header-nav">
+    <div class="container">
+      <h1 class="navbar-brand" [routerLink]="['/movie/list-movies']">STARMOVIE <i class="fa-solid fa-video" style="color: #ffffff;"></i></h1>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span> <i class="fa-solid fa-film"></i> </span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" routerLink="/movie/list-movies">Home <i class="fa-solid fa-house" style="color: #ffffff;"></i>  </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/movie/search-movies">Search Movie  <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/movie/top-movies">Top Rating <i class="fa-solid fa-fire" style="color: #ffffff;"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/movie/soon-movies">Soon Movies <i class="fa-solid fa-film" style="color: #ffffff;"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+</header>
+
+
+<router-outlet></router-outlet>

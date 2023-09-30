@@ -1,0 +1,17 @@
+
+<div class="contenedor-p">
+<div *ngFor="let cast of castingMovies" class="cont-c">
+  <div class="card-cast">
+    <div class="card-border-top">
+    </div>
+    <div class="img-cast">
+      <img [src]="cast.profile_path |movieImage" alt="">
+    </div>
+    <span [title]="cast.character" > <b>Character:</b> {{ cast.character | movieText }} </span>
+    <p class="job-cast"> <b>Name:</b> {{cast.original_name}} </p>
+    <button>Popularity: {{cast.popularity}} <i class="fa-regular fa-star " style="color: #ffffff;"></i>  </button>
+    <button class="mt-2 actor" [routerLink]="['/movie/actor/',cast.id]" > Actor's Information <i class="fa-solid fa-masks-theater m-1" style="color: #ffffff;"></i>  </button>
+  </div>
+</div>
+
+</div>

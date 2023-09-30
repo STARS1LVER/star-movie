@@ -1,0 +1,15 @@
+
+
+ <div class="card-movie">
+  <div class="svg"> <img [src]="moviesReceived.poster_path | movieImage" alt="">  </div>
+  <div class="card__content">
+    <p class="card__title" [title]="moviesReceived.title"> {{moviesReceived.title | movieText}}  </p>
+    <button class="card__description"> Rating: {{moviesReceived.vote_average | number:'1.2-2' }} <i class="fa-solid fa-star" style="color: #ffffff;"></i> </button>
+    <button class="card__button"[routerLink]="['/movie/info/',moviesReceived.id]">More Info... <i class="fa-solid fa-circle-info" style="color: #ffffff;"></i> </button>
+
+  </div>
+</div>
+
+
+
+

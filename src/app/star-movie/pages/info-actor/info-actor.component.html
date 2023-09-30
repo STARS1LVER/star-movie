@@ -1,0 +1,28 @@
+
+
+<section class="section-info" *ngIf="getInfoActor">
+
+  <div class="profile-actor">
+
+      <div class="image-container">
+        <img [src]="getInfoActor.profile_path | movieImage" alt="">
+      </div>
+      <div class="actor-text">
+        <h2> {{getInfoActor.name}} </h2>
+        <p> Biography: {{ getInfoActor.biography | movieBiography }}  </p>
+        <p> Date of Birth: {{getInfoActor.birthday | date}} </p>
+      </div>
+  </div>
+
+  <h3>SOME OF HIS MAIN MOVIES <i class="fa-solid fa-video" style="color: #ffb300;"></i></h3>
+
+  <div class="container-p ">
+    <div class="" *ngFor="let movie of getCreditsActor">
+      <star-card-movie [moviesReceived]="movie" ></star-card-movie>
+
+    </div>
+
+  </div>
+
+
+</section>

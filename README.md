@@ -1,27 +1,39 @@
 # StarMovie
+Esta es una aplicación web desarrollada en Angular 16.2.0 que permite a los usuarios explorar y obtener información sobre películas. Con esta aplicación, los usuarios pueden ver la lista de películas, buscar películas específicas, acceder a películas similares, ver las últimas películas en cartelera, las próximas a salir y obtener información detallada sobre cada película, incluido su elenco.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.0-next.1.
 
-## Development server
+![starmovie](https://i.ibb.co/bW2TRDp/starmo.jpg)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+# Características
+- Lista de Películas: Los usuarios pueden explorar una lista de películas disponibles.
 
-## Build
+- Búsqueda de Películas: Busca películas por título, género, año, director u otros criterios.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- Películas Similares: Obtén recomendaciones de películas similares a la que estás buscando.
 
-## Running unit tests
+- Últimas Películas en Cartelera: Accede a la lista de las películas más recientes que están actualmente en los cines.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- Próximas Películas: Descubre las películas que se lanzarán próximamente en los cines.
 
-## Running end-to-end tests
+Detalles de Películas: Obtén información detallada sobre una película en particular, incluyendo su sinopsis, calificación, reparto y más.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Elenco: Explora el elenco de una película y accede a información detallada sobre los actores.
 
-## Further help
+Requisitos
+- Angular CLI 16.2.0
+- Bootstrap 5.3.1
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+# Configuración
+- Clona este repositorio en tu máquina local:
+git clone https://github.com/tu-usuario/tu-repositorio.git
+
+- Navega al directorio de tu proyecto:
+cd tu-repositorio
+
+- Instala las dependencias necesarias:
+npm install
+
+- Inicia la aplicación:
+ng serve

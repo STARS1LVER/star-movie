@@ -1,0 +1,25 @@
+<h3 *ngIf="moviesSimilar && moviesSimilar.length != 0" class="text-center">SIMILAR MOVIES</h3>
+
+<div *ngIf="moviesSimilar && moviesSimilar.length != 0" id="carouselExampleCaptions" class="carousel slide" data-bs-interval="2000" data-bs-ride="carousel">
+
+
+  <div class="carousel-inner">
+    <div *ngFor="let movie of moviesSimilar; let i = index" class="carousel-item" [class.active]="i === 0">
+      <div class="image-container">
+        <img [src]="movie.poster_path | movieImage" class="d-block" alt="Slide {{ i + 1 }}">
+      </div>
+      <div class="carousel-caption d-none d-md-block">
+        <button class="btn-ver" (click)="reloadAndNextMovie(movie.id)">View More <i class="fa-solid fa-eye" style="color: #272626;"></i> </button>
+      </div>
+    </div>
+  </div>
+
+  <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next " type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>

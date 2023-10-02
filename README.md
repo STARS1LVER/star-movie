@@ -37,3 +37,6 @@ npm install
 
 - Inicia la aplicación:
 ng serve
+
+# Despliegue 🌎
+- https://demo-star-movie.netlify.app/movie/list-movies
